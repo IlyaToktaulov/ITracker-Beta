@@ -1,5 +1,6 @@
 @import url(../style/header.css);
 @import url(../style/workplace.css);
+@import url(../style/dark-style.css);
 
 body {
     font-family: "Inter", sans-serif;
