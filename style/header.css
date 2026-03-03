@@ -1,0 +1,38 @@
+.header {
+    margin-bottom: 40px;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(45, 66, 96);
+    color: white;
+}
+
+.logo,
+.board-name,
+.theme-btn {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.logo-beta {
+    font-size: 15px;
+}
+
+.theme-btn {
+    font-family: inherit;
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 30px;
+}
+.theme-btn:active {
+    scale: 0.95;
+}
