@@ -23,7 +23,7 @@ export class View {
 
         const isDark = this.containerNode.classList.contains('background-dark');
         this.containerNode.style.setProperty('background-image',
-            isDark ? 'url(../img/white.jpeg)' : 'url(../img/dark.jpg)',
+            isDark ? 'url(./img/white.jpeg)' : 'url(./img/dark.jpg)',
             'important'
         );
         this.containerNode.classList.toggle('background-dark');
