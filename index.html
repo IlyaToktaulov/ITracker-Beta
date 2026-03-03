@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Доска</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="container" class="container">
+        <section class="header">
+            <div class="top-bar">
+                <div class="logo">ITracker <span class="logo-beta">Beta</span></div>
+                <h2 class="board-name">Моя доска</h2>
+                <button id="theme-btn" class="theme-btn">Тема</button>
+            </div>
+        </section>
+        <section class="workplace">
+            <div id="col-tasks" class="column">
+                <div class="column-title">Текущие задачи</div>
+                <input type="text" id="input-task" class="input-task" placeholder="Добавить карточку...">
+            </div>
+            <div id="col-complited" class="column">
+                <div class="column-title">Выполнено</div>
+                <div id="done-case">Тут будут ваши выполненные дела...</div>
+            </div>
+            <div class="column"></div>
+        </section>
+    </div>
+
+    <script src="./script/index.js" type="module"></script>
 </body>
 </html>
