@@ -22,7 +22,16 @@
         <section class="workplace">
             <div id="col-tasks" class="column">
                 <div class="column-title">Текущие задачи</div>
-                <input type="text" id="input-task" class="input-task" placeholder="Добавить карточку...">
+                
+                <div class="input-block">
+                    <input type="text" id="input-task" class="input-task" placeholder="Добавить карточку...">
+                    <div class="input-buttons">
+                        <button id="set-btn" class="input-btn set-btn">Добавить</button>
+                        <button id="clear-btn" class="input-btn clear-btn">Стереть</button>
+                    </div>
+                </div>
+
+                <div id="task-list" class="task-list"></div>
             </div>
             <div id="col-complited" class="column">
                 <div class="column-title">Выполнено</div>
