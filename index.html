@@ -3,46 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Доска</title>
+    <title>Добро пожаловать в ITracker</title>
     <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/login/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="container" class="container">
-        <section class="header">
-            <div class="top-bar">
-                <div class="logo">ITracker <span class="logo-beta">Beta</span></div>
-                <h2 class="board-name">Моя доска</h2>
-                <button id="theme-btn" class="theme-btn">Тема</button>
-            </div>
-        </section>
-        <section class="workplace">
-            <div id="col-tasks" class="column">
-                <div class="column-title">Текущие задачи</div>
+    <div class="container">
+        <img class="user-avatar" src="./img/avatar.png" alt="фото профиля">
 
-                <div id="input-block" class="input-block">
-                    <input type="text" id="input-task" class="input-task" placeholder="Добавить карточку...">
-                    <div class="input-buttons">
-                        <button id="set-btn" class="input-btn set-btn">Добавить</button>
-                        <button id="clear-btn" class="input-btn clear-btn">Стереть</button>
-                    </div>
-                </div>
+        <p class="user-name">Red Cat</p>
 
-                <div id="task-list" class="task-list"></div>
-            </div>
+        <input class="password" type="text" placeholder="Введите код приглашения">
 
-            <div id="col-complited" class="column">
-                <div class="column-title">Выполнено</div>
-                <div id="done-case">Тут будут ваши выполненные дела...</div>
-            </div>
-
-            <div class="column"></div>
-        </section>
+        <button class="login-btn" onclick="window.location.href='workplace.html'">Приступить к делам</button>
     </div>
-
-    <script src="./script/index.js" type="module"></script>
 </body>
 </html>
