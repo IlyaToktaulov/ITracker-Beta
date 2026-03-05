@@ -8,6 +8,8 @@ export class View {
         this.tastListNode = document.querySelector('#task-list');
         this.setBtnNode = document.querySelector('#set-btn');
         this.clearBtnNode = document.querySelector('#clear-btn');
+        this.taskCardNode = document.querySelector('#task-card');
+        this.inputBlockNode = document.querySelector('#input-block');
 
         this.getUserTask = getUserTask;
 
@@ -25,7 +27,9 @@ export class View {
             columnContent.classList.toggle('column-element-dark');
         });
 
-        this.inputTaskNode.classList.toggle('input-Dark');
+        this.inputBlockNode.classList.toggle('input-block-dark');
+
+        this.inputTaskNode.classList.toggle('task-dark-theme');
         this.themeBtnNode.classList.toggle('button-theme-dark');
 
         const isDark = this.containerNode.classList.contains('background-dark');
@@ -51,8 +55,8 @@ export class View {
 
         tasks.forEach(task => {
             this.tastListNode.innerHTML += `
-                <div>
-                    <p>${task}</p>
+                <div id='task-card' class='task-card'>
+                    <p class='task-card-text'>${task}</p>
                 </div>
             `;
         });

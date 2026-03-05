@@ -84,3 +84,25 @@
 .set-btn {
     background-color: rgb(148, 199, 72);
 }
+
+/* task cards */
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.task-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 
+        6px 6px 12px #d1d9e6,  
+        -6px -6px 12px #eff5ff; 
+}

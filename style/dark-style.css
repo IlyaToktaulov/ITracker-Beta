@@ -12,10 +12,15 @@
     box-shadow: none;
 }
 
-.input-Dark {
+.task-dark-theme {
     background-color: rgb(36, 37, 40);
     box-shadow: none;
     color: white;
+}
+
+.input-block-dark {
+    background-color: rgb(36, 37, 40);
+    box-shadow: none;
 }
 
 .button-theme-dark {
